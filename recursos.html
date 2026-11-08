@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video y guía | LIVWater</title>
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="icon" type="image/svg+xml" href="iconos/favicon.svg">
+</head>
+<body>
+<a class="saltar" href="#contenido">Saltar al contenido</a>
+
+<!-- ENCABEZADO CON NAVEGACIÓN Y DESPLEGABLE -->
+<header class="cabecera">
+  <div class="contenedor barra">
+    <a class="marca" href="index.html">
+      <img src="imagenes/LIVWaterLogo.png" alt="Logotipo de LIVWater" width="42" height="42">LIVWater
+    </a>
+    <nav aria-label="Navegación principal">
+      <ul class="menu">
+        <li><a href="index.html#inicio">Inicio</a></li>
+        <li><a href="index.html#nosotros">Nosotros</a></li>
+        <li>
+          <details class="desplegable">
+            <summary>Resolver</summary>
+            <ul class="submenu">
+              <li><a href="index.html#servicios">Servicios</a></li>
+              <li><a href="index.html#proyectos">Proyectos</a></li>
+              <li><a href="index.html#orientador">Consultar Puntos</a></li>
+              <li><a href="index.html#contacto">Reportar Fuga</a></li>
+            </ul>
+          </details>
+        </li>
+        <li><a href="recursos.html">Video y guía</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="contenido" class="contenedor seccion">
+  <p class="etiqueta">El contexto de nuestra propuesta</p>
+  <h1>El cuidado del agua y su importancia vital en la comunidad.</h1>
+  
+  <section class="dos-columnas" aria-labelledby="video-titulo">
+    <div>
+      <!-- VIDEO INSERTADO DESDE YOUTUBE (ODS 6 - Cuidado del Agua) -->
+      <iframe 
+        class="video" 
+        src="https://www.youtube.com/embed/7CTnJ-rehgg?si=vo0dso6kWfFM3v_m" 
+        title="YouTube video player" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        referrerpolicy="strict-origin-when-cross-origin" 
+        allowfullscreen>
+      </iframe>
+      <p class="nota">Video educativo de referencia sobre la importancia del agua, el consumo responsable y la prevención de la contaminación.</p>
+      <p><a href="https://www.youtube.com/watch?v=7CTnJ-rehgg" target="_blank" rel="noopener noreferrer">Abrir el video en YouTube</a> si no se reproduce directamente aquí.</p>
+    </div>
+    
+    <div>
+      <h2 id="video-titulo">De la concientización a la acción comunitaria</h2>
+      <p>En <strong>LIVWater</strong> tomamos como base la problemática global del agua expuesta en el ODS 6 para proponer soluciones digitales orientadas a:</p>
+      <ol>
+        <li>Consultar puntos y dispensadores de agua potable seguros.</li>
+        <li>Reportar fugas y caños defectuosos para evitar el desperdicio del recurso.</li>
+        <li>Promover una cultura de ahorro y conservación en hogares y universidades.</li>
+      </ol>
+      <a class="boton" href="index.html#orientador">Probar el recorrido interactivo</a>
+    </div>
+  </section>
+</main>
+
+<!-- PIE DE PÁGINA -->
+<footer class="pie">
+  <div class="contenedor">
+    <p><strong>LIVWater</strong> · Innovación para acceso universal y limpio</p>
+    <p>Contacto: contacto@ejemplo.org | Ubicación: Lima, Perú</p>
+    <nav class="redes" aria-label="Redes sociales de la organización">
+      <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><img src="iconos/facebook.svg" alt="" width="24" height="24">Facebook</a>
+      <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><img src="iconos/instagram.svg" alt="" width="24" height="24">Instagram</a>
+      <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer"><img src="iconos/youtube.svg" alt="" width="24" height="24">YouTube</a>
+    </nav>
+    <p>© 2026 LIVWater · Todos los derechos reservados · <a href="FUENTES.txt">Créditos de recursos</a></p>
+  </div>
+</footer>
+</body>
+</html>

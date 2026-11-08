@@ -1,0 +1,14 @@
+ACME — INICIO RÁPIDO
+1. Extrae todo el ZIP. Abre la carpeta web_site en Visual Studio Code.
+2. Abre index.html en un navegador o usa Live Server si ya lo tienes instalado.
+3. Abre Resolver: el menú horizontal contiene un desplegable vertical.
+4. Baja por la página: el encabezado permanece arriba gracias a position: sticky.
+5. Prueba mochila, libreta y abrigo. Cada selección cambia el panel con CSS.
+6. Completa datos ficticios y abre la confirmación de demostración.
+7. Video y guía abre una segunda página del mismo sitio. Requiere Internet para el video.
+No se utiliza JavaScript ni se necesita una aplicación móvil independiente.
+No se guarda información ni se verifica la propiedad de objetos.
+TRABAJO EN EQUIPO
+Un integrante organiza la estructura; los demás implementan una HU diferente cada uno.
+Integrar todo en una sola web, comprimir el proyecto y subirlo a la Actividad 3.
+Cada integrante expone su parte, la HU y su relación con el problema.

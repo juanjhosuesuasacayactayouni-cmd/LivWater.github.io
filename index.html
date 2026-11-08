@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inicio | LIVWater</title>
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="icon" type="image/svg+xml" href="iconos/favicon.svg">
+</head>
+<body>
+<a class="saltar" href="#contenido">Saltar al contenido</a>
+
+<!-- ENCABEZADO CON NAVEGACIÓN Y MENÚ HAMBURGUESA -->
+<header class="cabecera">
+  <div class="contenedor barra">
+    <a class="marca" href="index.html">
+      <img src="imagenes/LIVWaterLogo.png" alt="Logotipo de LIVWater" width="42" height="42">LIVWater
+    </a>
+    
+    <!-- Controles para el menú móvil -->
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+    <label for="menu-toggle" class="menu-icono" aria-label="Abrir menú">&#9776;</label>
+
+    <nav aria-label="Navegación principal" class="nav-principal">
+      <ul class="menu">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li>
+          <details class="desplegable">
+            <summary>Resolver</summary>
+            <ul class="submenu">
+              <li><a href="#servicios">Servicios</a></li>
+              <li><a href="#orientador">Consultar Puntos</a></li>
+              <li><a href="#contacto">Reportar Fuga</a></li>
+            </ul>
+          </details>
+        </li>
+        <li><a href="recursos.html">Video y guía</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="contenido">
+  <!-- SECCIÓN HERO -->
+  <section id="inicio" class="hero contenedor dos-columnas" aria-labelledby="titulo">
+    <div class="texto-hero">
+      <p class="etiqueta">ODS 6 · Agua limpia y saneamiento</p>
+      <h1 id="titulo">Innovación para un acceso universal y limpio</h1>
+      <p>Presentamos iniciativas digitales e innovadoras orientadas a promover el uso responsable, la conservación del agua y la gestión sostenible en hogares y comunidades.</p>
+      <div class="acciones-hero">
+        <a class="boton" href="#orientador">Consultar Puntos Hídricos</a>
+        <a class="enlace" href="recursos.html">Conocer la iniciativa</a>
+      </div>
+    </div>
+    <figure class="postal">
+      <!-- Fallback implementado en CSS por si la imagen no carga -->
+      <img class="foto" src="imagenes/ConservacionAgua.jpg" alt="Conservación y uso responsable del agua" width="1000" height="667" loading="lazy">
+      <figcaption>Garantizando un acceso seguro para las futuras generaciones.</figcaption>
+    </figure>
+  </section>
+
+  <!-- SECCIÓN QUIÉNES SOMOS -->
+  <section id="nosotros" class="seccion fondo">
+    <div class="contenedor dos-columnas">
+      <figure class="postal">
+        <img class="foto" src="imagenes/Equipo.jpg" alt="Equipo de trabajo en comunidad" width="1000" height="667" loading="lazy">
+      </figure>
+      <div>
+        <p class="etiqueta">Sobre nosotros</p>
+        <h2>Gestión sostenible, participativa y democrática</h2>
+        <p>Somos una iniciativa comprometida con la gestión sostenible de los recursos hídricos, promoviendo el uso responsable y la conservación del agua.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN SERVICIOS -->
+  <section id="servicios" class="seccion contenedor">
+    <p class="etiqueta">Nuestras soluciones</p>
+    <h2>Servicios para la comunidad</h2>
+    <div class="tarjetas">
+      <article class="tarjeta">
+        <span class="numero">01 / Mapeo</span>
+        <h3>Localización Hídrica</h3>
+        <p>Geolocalización en tiempo real de fuentes de agua potable con filtros avanzados.</p>
+      </article>
+      <article class="tarjeta">
+        <span class="numero">02 / Reporte</span>
+        <h3>Reporte Ciudadano</h3>
+        <p>Plataforma colaborativa para notificar caños defectuosos y desbordes.</p>
+      </article>
+      <article class="tarjeta">
+        <span class="numero">03 / Offline</span>
+        <h3>Monitoreo Offline</h3>
+        <p>Autonomía técnica para recopilar datos sin necesidad de conexión a internet.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- SECCIÓN INTERACTIVA -->
+  <section id="orientador" class="seccion fondo">
+    <div class="contenedor">
+      <p class="etiqueta">HU · Consulta interactiva</p>
+      <h2>¿Qué punto de agua necesitas consultar?</h2>
+      <fieldset class="orientador">
+        
+        <div>
+          <legend>Categoría de punto hídrico</legend>
+        </div>
+        
+        <input type="radio" name="objeto" id="mochila" value="dispensadores" checked>
+        <label for="mochila">Dispensadores Públicos</label>
+        
+        <input type="radio" name="objeto" id="libreta" value="tanques">
+        <label for="libreta">Tanques Comunitarios</label>
+        
+        <input type="radio" name="objeto" id="abrigo" value="red">
+        <label for="abrigo">Red de Fugas</label>
+
+        <div class="resultados">
+          <div class="respuesta mochila">
+            <p class="etiqueta">Punto HD-01</p>
+            <h3>Dispensador Campus Central</h3>
+            <p>Estado: <strong>Operativo y Filtrado</strong>. Agua potable con control bacteriológico al día.</p>
+          </div>
+          <div class="respuesta libreta">
+            <p class="etiqueta">Punto HD-02</p>
+            <h3>Tanque Comunitario Sector 3</h3>
+            <p>Estado: <strong>Abastecido al 85%</strong>. Mantenimiento programado para fin de mes.</p>
+          </div>
+          <div class="respuesta abrigo">
+            <p class="etiqueta">Punto HD-03</p>
+            <h3>Reporte de Incidencia en Red</h3>
+            <p>Estado: <strong>Fuga Menor Detectada</strong>. Cuadrilla notificada para reparación.</p>
+          </div>
+        </div>
+      </fieldset>
+    </div>
+  </section>
+
+  <!-- SECCIÓN FORMULARIO -->
+  <section id="contacto" class="seccion contenedor">
+    <div class="dos-columnas">
+      <div>
+        <p class="etiqueta">HU · Reporte e interacción</p>
+        <h2>Contáctanos o reporta una incidencia</h2>
+        <p>Envíanos tus datos o la ubicación de un caño defectuoso para notificar al equipo gestor.</p>
+      </div>
+      <form id="formularioContacto" action="confirmacion.html" method="get" class="formulario">
+        <label for="nombre">Nombre completo</label>
+        <input id="nombre" name="nombre" type="text" required maxlength="60" placeholder="Ejemplo: Ana Pérez">
+        
+        <label for="correo">Correo electrónico</label>
+        <input id="correo" name="correo" type="email" required placeholder="ejemplo@gmail.com">
+        
+        <label for="tel">Número de celular</label>
+        <input id="tel" name="tel" type="tel" required placeholder="Ej: 987654321">
+        
+        <label for="actividad">Tipo de consulta o reporte</label>
+        <select id="actividad" name="actividad" required>
+          <option value="">Selecciona una opción</option>
+          <option value="fuga">Reportar fuga de agua</option>
+          <option value="consulta">Consultar punto hídrico</option>
+        </select>
+        
+        <label for="detalle">Mensaje o detalle del reporte</label>
+        <textarea id="detalle" name="detalle" required minlength="8" maxlength="240" rows="3" placeholder="Describe la ubicación..."></textarea>
+        
+        <div class="casilla-aceptar">
+          <input id="acepto" name="acepto" type="checkbox" required> 
+          <label for="acepto">Entiendo que es una simulación.</label>
+        </div>
+        
+        <button type="submit" class="boton">Enviar Información</button>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="pie">
+  <div class="contenedor">
+    <p><strong>LIVWater</strong> · Innovación para acceso universal y limpio</p>
+    <p>© 2026 LIVWater · Todos los derechos reservados</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

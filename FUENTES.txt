@@ -1,0 +1,18 @@
+ACME — Oficina de pequeños reencuentros
+Caso académico ficticio de objetos extraviados en ferias itinerantes.
+Vinculación pedagógica propuesta: ODS 11 y espacios de encuentro comunitario.
+No hay inventario real, búsqueda automática, verificación de propiedad ni entrega de objetos.
+Fotos de referencia descargadas de Unsplash:
+mochila.jpg: https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=1000&q=85
+feria.jpg: https://images.unsplash.com/photo-1488459716781-31db52582fe9?w=1000&q=85
+Condiciones de fotografías: https://unsplash.com/license
+Las fotos son ilustrativas; no prueban la existencia del servicio ni de objetos encontrados.
+Iconos Facebook, Instagram y YouTube: Simple Icons v15 (CDN jsDelivr).
+https://cdn.jsdelivr.net/npm/simple-icons@v15/icons/
+https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md
+Las marcas pertenecen a sus titulares; no implican afiliación.
+Favicon ACME: SVG original para esta actividad.
+Video de referencia: UNESCO en español. Los Objetivos de Desarrollo Sostenible qué son y cómo alcanzarlos.
+https://www.youtube.com/watch?v=MCKH5xk8X-g
+El video se inserta desde YouTube; no se descarga ni se redistribuye.
+Los enlaces de redes sociales llevan a páginas generales; reemplazar por las del proyecto.
