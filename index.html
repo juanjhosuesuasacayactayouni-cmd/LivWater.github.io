@@ -5,33 +5,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Inicio | LIVWater</title>
   <link rel="stylesheet" href="css/estilos.css">
-  <link rel="icon" type="image/svg+xml" href="iconos/favicon.png">
+  <link rel="icon" type="image/svg+xml" href="iconos/favicon.svg">
+  <script src="consulta-puntos.js" defer></script>
 </head>
 <body>
 <a class="saltar" href="#contenido">Saltar al contenido</a>
 
-<!-- ENCABEZADO CON NAVEGACIÓN Y MENÚ HAMBURGUESA -->
+<!-- ENCABEZADO CON NAVEGACIÓN Y DESPLEGABLE -->
 <header class="cabecera">
   <div class="contenedor barra">
     <a class="marca" href="index.html">
-      <img src="imagenes/LIVWaterLogo.png" alt="Logotipo de LIVWater" width="42" height="42">LIVWater
+      <img src="iconos/Liwatericon.png" alt="Logotipo de LIVWater" width="150" height="150">LIVWater
     </a>
-    
-    <!-- Controles para el menú móvil -->
-    <input type="checkbox" id="menu-toggle" class="menu-toggle">
-    <label for="menu-toggle" class="menu-icono" aria-label="Abrir menú">&#9776;</label>
-
-    <nav aria-label="Navegación principal" class="nav-principal">
+    <nav aria-label="Navegación principal">
       <ul class="menu">
-        <li><a href="#inicio">Inicio</a></li>
-        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="index.html#inicio">Inicio</a></li>
+        <li><a href="index.html#nosotros">Nosotros</a></li>
         <li>
           <details class="desplegable">
             <summary>Resolver</summary>
             <ul class="submenu">
-              <li><a href="#servicios">Servicios</a></li>
-              <li><a href="#orientador">Consultar Puntos</a></li>
-              <li><a href="#contacto">Reportar Fuga</a></li>
+              <li><a href="index.html#servicios">Servicios</a></li>
+              <li><a href="index.html#proyectos">Proyectos</a></li>
+              <li><a href="index.html#orientador">Consultar Puntos</a></li>
+              <li><a href="index.html#contacto">Reportar Fuga</a></li>
             </ul>
           </details>
         </li>
@@ -42,20 +39,18 @@
 </header>
 
 <main id="contenido">
-  <!-- SECCIÓN HERO -->
+  <!-- SECCIÓN HERO (PRESENTACIÓN) -->
   <section id="inicio" class="hero contenedor dos-columnas" aria-labelledby="titulo">
-    <div class="texto-hero">
+    <div>
       <p class="etiqueta">ODS 6 · Agua limpia y saneamiento</p>
-      <h1 id="titulo">Innovación para un acceso universal y limpio</h1>
+      <h1 id="titulo">Innovación para un<br>acceso universal y limpio</h1>
       <p>Presentamos iniciativas digitales e innovadoras orientadas a promover el uso responsable, la conservación del agua y la gestión sostenible en hogares y comunidades.</p>
-      <div class="acciones-hero">
-        <a class="boton" href="#orientador">Consultar Puntos Hídricos</a>
-        <a class="enlace" href="recursos.html">Conocer la iniciativa</a>
-      </div>
+      <a class="boton" href="#orientador">Consultar Puntos Hídricos</a>
+      <a class="enlace" href="recursos.html">Conocer la iniciativa</a>
+      <p class="nota">Plataforma digital para la gestión comunitaria del agua.</p>
     </div>
     <figure class="postal">
-      <!-- Fallback implementado en CSS por si la imagen no carga -->
-      <img class="foto" src="imagenes/ConservacionAgua.jpg" alt="Conservación y uso responsable del agua" width="1000" height="667" loading="lazy">
+      <img class="foto" src="imagenes/lugaracopio.jpg" alt="Conservación y uso responsable del agua" width="1000" height="667">
       <figcaption>Garantizando un acceso seguro para las futuras generaciones.</figcaption>
     </figure>
   </section>
@@ -63,13 +58,17 @@
   <!-- SECCIÓN QUIÉNES SOMOS -->
   <section id="nosotros" class="seccion fondo">
     <div class="contenedor dos-columnas">
-      <figure class="postal">
-        <img class="foto" src="imagenes/Equipo.jpg" alt="Equipo de trabajo en comunidad" width="1000" height="667" loading="lazy">
-      </figure>
+      <img class="foto" src="imagenes/feria.jpg" alt="Equipo de la organización LIVWater" width="1000" height="667" loading="lazy">
       <div>
         <p class="etiqueta">Sobre nosotros</p>
         <h2>Gestión sostenible, participativa y democrática</h2>
-        <p>Somos una iniciativa comprometida con la gestión sostenible de los recursos hídricos, promoviendo el uso responsable y la conservación del agua.</p>
+        <p>Somos una iniciativa comprometida con la gestión sostenible de los recursos hídricos, promoviendo el uso responsable y la conservación del agua en hogares, campos universitarios y comunidades.</p>
+        
+        <h3>Nuestra misión</h3>
+        <p>Impulsar herramientas digitales accesibles e inclusivas que permitan a ciudadanos y gestores hídricos monitorear, conservar y reducir el desperdicio de agua potable en su vida cotidiana y entorno comunitario.</p>
+        
+        <h3>Nuestra visión</h3>
+        <p>Ser la plataforma digital referente en América Latina para la gestión transparente y comunitaria del agua, garantizando un acceso seguro, equitativo y sin barreras físicas o tecnológicas.</p>
       </div>
     </div>
   </section>
@@ -81,93 +80,168 @@
     <div class="tarjetas">
       <article class="tarjeta">
         <span class="numero">01 / Mapeo</span>
-        <h3>Localización Hídrica</h3>
-        <p>Geolocalización en tiempo real de fuentes de agua potable con filtros avanzados.</p>
+        <h3>Localización de Puntos Hídricos</h3>
+        <p>Geolocalización en tiempo real de fuentes de agua potable, dispensadores y puntos de abastecimiento seguro con filtros de búsqueda avanzados.</p>
       </article>
       <article class="tarjeta">
         <span class="numero">02 / Reporte</span>
-        <h3>Reporte Ciudadano</h3>
-        <p>Plataforma colaborativa para notificar caños defectuosos y desbordes.</p>
+        <h3>Reporte Ciudadano de Fugas</h3>
+        <p>Plataforma colaborativa para notificar caños defectuosos y desbordes de tanques, reduciendo pérdidas físicas y sobrecostos.</p>
       </article>
       <article class="tarjeta">
         <span class="numero">03 / Offline</span>
-        <h3>Monitoreo Offline</h3>
-        <p>Autonomía técnica para recopilar datos sin necesidad de conexión a internet.</p>
+        <h3>Monitoreo en Modo Offline</h3>
+        <p>Autonomía técnica para recopilar y consultar datos sobre fuentes de agua en zonas con conectividad limitada.</p>
       </article>
     </div>
   </section>
 
-  <!-- SECCIÓN INTERACTIVA -->
-  <section id="orientador" class="seccion fondo">
+  <!-- SECCIÓN PROYECTOS -->
+  <section id="proyectos" class="seccion fondo">
     <div class="contenedor">
-      <p class="etiqueta">HU · Consulta interactiva</p>
-      <h2>¿Qué punto de agua necesitas consultar?</h2>
-      <fieldset class="orientador">
-        
-        <div>
-          <legend>Categoría de punto hídrico</legend>
-        </div>
-        
-        <input type="radio" name="objeto" id="mochila" value="dispensadores" checked>
-        <label for="mochila">Dispensadores Públicos</label>
-        
-        <input type="radio" name="objeto" id="libreta" value="tanques">
-        <label for="libreta">Tanques Comunitarios</label>
-        
-        <input type="radio" name="objeto" id="abrigo" value="red">
-        <label for="abrigo">Red de Fugas</label>
-
-        <div class="resultados">
-          <div class="respuesta mochila">
-            <p class="etiqueta">Punto HD-01</p>
-            <h3>Dispensador Campus Central</h3>
-            <p>Estado: <strong>Operativo y Filtrado</strong>. Agua potable con control bacteriológico al día.</p>
-          </div>
-          <div class="respuesta libreta">
-            <p class="etiqueta">Punto HD-02</p>
-            <h3>Tanque Comunitario Sector 3</h3>
-            <p>Estado: <strong>Abastecido al 85%</strong>. Mantenimiento programado para fin de mes.</p>
-          </div>
-          <div class="respuesta abrigo">
-            <p class="etiqueta">Punto HD-03</p>
-            <h3>Reporte de Incidencia en Red</h3>
-            <p>Estado: <strong>Fuga Menor Detectada</strong>. Cuadrilla notificada para reparación.</p>
-          </div>
-        </div>
-      </fieldset>
+      <p class="etiqueta">Iniciativas en curso</p>
+      <h2>Proyectos destacados</h2>
+      <div class="tarjetas">
+        <article class="tarjeta">
+          <h3>Mapeo de Puntos Hídricos Seguros</h3>
+          <p>Desarrollo de herramientas de búsqueda e identificación del estado operacional de infraestructuras comunitarias para garantizar agua apta para el consumo.</p>
+        </article>
+        <article class="tarjeta">
+          <h3>Reducción del Desperdicio Doméstico</h3>
+          <p>Mecanismos de sensibilización y control ciudadano para prevenir fugas invisibles por goteo y descuidos en viviendas y vecindarios.</p>
+        </article>
+        <article class="tarjeta">
+          <h3>Accesibilidad e Interfaz Inclusiva</h3>
+          <p>Diseño de software adaptativo con modo oscuro para trabajo nocturno, indicaciones por voz y cumplimiento de las normas WCAG 2.1.</p>
+        </article>
+      </div>
     </div>
   </section>
 
-  <!-- SECCIÓN FORMULARIO -->
-  <section id="contacto" class="seccion contenedor">
-    <div class="dos-columnas">
+  <!-- SECCIÓN INTERACTIVA (SIMULACIÓN DE SOLUCIÓN) -->
+  <section id="orientador" class="seccion contenedor">
+    <p class="etiqueta">HU · Consulta interactiva de puntos hídricos</p>
+    <h2>Consulta de puntos hídricos</h2>
+    <p>Busca por nombre, ubicación o estado, y filtra los resultados por tipo de punto.</p>
+
+    <div class="filtros-puntos">
+      <div>
+        <label for="buscar-punto">Buscar puntos</label>
+        <input id="buscar-punto" type="search" placeholder="Ej.: Campus Central, fuga, operativo" autocomplete="off">
+      </div>
+      <div>
+        <label for="filtro-categoria">Categoría</label>
+        <select id="filtro-categoria">
+          <option value="todos">Todas las categorías</option>
+          <option value="dispensador">Dispensadores públicos</option>
+          <option value="tanque">Tanques comunitarios</option>
+          <option value="red">Red de riego y fugas</option>
+        </select>
+      </div>
+    </div>
+
+    <p id="estado-consulta" class="nota" aria-live="polite">Mostrando 3 puntos de demostración.</p>
+    <div id="resultados-puntos" class="resultados" aria-label="Resultados de puntos hídricos">
+      <article class="respuesta" data-categoria="dispensador">
+        <p class="etiqueta">Punto HD-01 · Dispensador público</p>
+        <h3>Dispensador Campus Central</h3>
+        <p>Ubicación: Campus Central.</p>
+        <p>Estado: <strong>Operativo y filtrado</strong>. Agua potable con control bacteriológico al día; ubicación limpia y accesible.</p>
+      </article>
+      <button id="mostrar-mapa" class="boton" type="button" aria-controls="mapa-puntos" aria-expanded="false" hidden>Ver mapa de dispensadores</button>
+      <figure id="mapa-puntos" class="mapa-puntos" hidden>
+        <img src="imagenes/mapa.png" alt="Mapa ilustrativo con tres marcadores de ubicaciones de puntos hídricos" loading="lazy">
+        <figcaption>Mapa ilustrativo de ubicaciones de puntos hídricos.</figcaption>
+      </figure>
+      <article class="respuesta" data-categoria="tanque">
+        <p class="etiqueta">Punto HD-02 · Tanque comunitario</p>
+        <h3>Tanque Comunitario Sector 3</h3>
+        <p>Ubicación: Sector 3.</p>
+        <p>Estado: <strong>Abastecido al 85 %</strong>. Mantenimiento programado para fin de mes. Agua no tratada: hervir antes de consumir.</p>
+      </article>
+      <article class="respuesta" data-categoria="red">
+        <p class="etiqueta">Punto HD-03 · Red de riego y fugas</p>
+        <h3>Reporte de Incidencia en Red</h3>
+        <p>Ubicación: zona vecinal.</p>
+        <p>Estado: <strong>Fuga menor detectada</strong>. Incidencia registrada; cuadrilla notificada para reparación.</p>
+        <a class="boton" href="#contacto">Reportar una incidencia</a>
+      </article>
+      <p id="sin-resultados" class="nota" hidden>No se encontraron puntos con esos criterios. Prueba otra búsqueda o categoría.</p>
+    </div>
+    <p class="nota">Información de demostración; no corresponde a datos en tiempo real.</p>
+  </section>
+
+  <!-- SECCIÓN GALERÍA -->
+  <section id="galeria" class="seccion fondo">
+    <div class="contenedor">
+      <p class="etiqueta">Investigación y prototipado</p>
+      <h2>Galería del proyecto</h2>
+      <p>Explora el diseño de nuestras interfaces móviles y las actividades de investigación con comunidades y estudiantes.</p>
+      <div class="galeria">
+        <figure>
+          <img src="imagenes/galeria1.png" alt="Prototipo de interfaz móvil LIVWater" width="1000" height="667" loading="lazy">
+          <figcaption>Prototipado de flujos interactivos</figcaption>
+        </figure>
+        <figure>
+          <img src="imagenes/galeria2.png" alt="Sesión de investigación con usuarios" width="1000" height="667" loading="lazy">
+          <figcaption>Trabajo de campo e investigación</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN TESTIMONIOS -->
+  <section id="testimonios" class="seccion contenedor">
+    <p class="etiqueta">Experiencias y conciencia</p>
+    <h2>Testimonios de la comunidad</h2>
+    <div class="tarjetas">
+      <blockquote class="tarjeta">
+        <p>"En mi hogar la mayoría ahorramos agua. Decidimos cambiar un caño que goteaba en el tercer piso porque sabíamos que gota a gota el recurso se pierde."</p>
+        <cite>— Anderson Gutiérrez (Estudiante de Ingeniería)</cite>
+      </blockquote>
+      <blockquote class="tarjeta">
+        <p>"Llevo siempre mi termo a la universidad y consumo toda el agua para no desperdiciar nada. Me motiva cuidar el recurso."</p>
+        <cite>— Andrés Láz (Estudiante de Arquitectura)</cite>
+      </blockquote>
+      <blockquote class="tarjeta">
+        <p>"A mayor desperdicio el monto del recibo aumenta, por eso evito dejar correr el agua al lavar vajillas o asearme."</p>
+        <cite>— Esteban Quito (Estudiante de Software)</cite>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- SECCIÓN CONTÁCTANOS (FORMULARIO) -->
+  <section id="contacto" class="seccion fondo">
+    <div class="contenedor dos-columnas">
       <div>
         <p class="etiqueta">HU · Reporte e interacción</p>
         <h2>Contáctanos o reporta una incidencia</h2>
-        <p>Envíanos tus datos o la ubicación de un caño defectuoso para notificar al equipo gestor.</p>
+        <p>Envíanos tus datos o la ubicación de un caño defectuoso o fuga para notificar al equipo gestor.</p>
+        <p class="nota">Formulario de prueba con validación HTML5 para simulación de entrega.</p>
       </div>
-      <form id="formularioContacto" action="confirmacion.html" method="get" class="formulario">
-        <label for="nombre">Nombre completo</label>
-        <input id="nombre" name="nombre" type="text" required maxlength="60" placeholder="Ejemplo: Ana Pérez">
+      <form action="confirmacion.html" method="get" class="formulario">
+        <label for="nombre">Nombre de prueba</label>
+        <input id="nombre" type="text" required maxlength="60" placeholder="Ejemplo: Ana" autocomplete="off">
         
         <label for="correo">Correo electrónico</label>
-        <input id="correo" name="correo" type="email" required placeholder="ejemplo@gmail.com">
+        <input id="correo" type="email" required placeholder="ejemplo@gmail.com" autocomplete="off">
         
-        <label for="tel">Número de celular</label>
-        <input id="tel" name="tel" type="tel" required placeholder="Ej: 987654321">
+        <label for="tel">Número de teléfono</label>
+        <input id="tel" type="tel" required placeholder="Ej: +51 987 654 321" autocomplete="off">
         
         <label for="actividad">Tipo de consulta o reporte</label>
-        <select id="actividad" name="actividad" required>
+        <select id="actividad" required>
           <option value="">Selecciona una opción</option>
-          <option value="fuga">Reportar fuga de agua</option>
-          <option value="consulta">Consultar punto hídrico</option>
+          <option>Reportar fuga de agua</option>
+          <option>Consultar punto hídrico</option>
+          <option>Unirse como voluntario</option>
         </select>
         
         <label for="detalle">Mensaje o detalle del reporte</label>
-        <textarea id="detalle" name="detalle" required minlength="8" maxlength="240" rows="3" placeholder="Describe la ubicación..."></textarea>
+        <textarea id="detalle" required minlength="8" maxlength="240" rows="3" placeholder="Describe la ubicación o mensaje..."></textarea>
         
-        <div class="casilla-aceptar">
-          <input id="acepto" name="acepto" type="checkbox" required> 
+        <div>
+          <input id="acepto" type="checkbox" required> 
           <label for="acepto">Entiendo que es una simulación.</label>
         </div>
         
@@ -175,15 +249,49 @@
       </form>
     </div>
   </section>
+
+  <section class="seccion contenedor" aria-labelledby="video-titulo">
+    <p class="etiqueta">El contexto de nuestra propuesta</p>
+    <h2>Una comunidad que cuida y gestiona el agua de forma sostenible</h2>
+    <div class="dos-columnas">
+      <div>
+        <iframe
+          class="video"
+          src="https://www.youtube.com/embed/gQBJfYlDOvA"
+          title="Objetivos de Desarrollo Sostenible"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+        <p class="nota">Video general sobre los ODS de UNESCO en español como marco de referencia para LIVWater.</p>
+        <p><a href="https://www.youtube.com/watch?v=MCKH5xk8X-g" target="_blank" rel="noopener noreferrer">Abrir el video en YouTube</a> si no se reproduce aquí.</p>
+      </div>
+      <div>
+        <h2 id="video-titulo">Del ODS 6 a la red de cuidado hídrico</h2>
+        <p>Usamos el ODS 6 como punto de partida para proponer herramientas digitales de acceso universal, monitoreo y reporte de incidentes en el agua.</p>
+        <ol>
+          <li>Consulta el estado de puntos hídricos.</li>
+          <li>Reporta fugas o incidencias vecinales.</li>
+          <li>Observa el flujo de respuesta simulada.</li>
+        </ol>
+        <a class="boton" href="#orientador">Probar el recorrido</a>
+      </div>
+    </div>
+  </section>
 </main>
 
+<!-- PIE DE PÁGINA -->
 <footer class="pie">
   <div class="contenedor">
     <p><strong>LIVWater</strong> · Innovación para acceso universal y limpio</p>
-    <p>© 2026 LIVWater · Todos los derechos reservados</p>
+    <p>Contacto: contacto@ejemplo.org | Ubicación: Lima, Perú | Horario: Lun-Vie 8:00 a.m. - 6:00 p.m.</p>
+    <nav class="redes" aria-label="Redes sociales de la organización">
+      <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><img src="iconos/facebook.svg" alt="" width="24" height="24">Facebook</a>
+      <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><img src="iconos/instagram.svg" alt="" width="24" height="24">Instagram</a>
+      <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer"><img src="iconos/youtube.svg" alt="" width="24" height="24">YouTube</a>
+    </nav>
+    <p>© 2026 LIVWater · Todos los derechos reservados · <a href="FUENTES.txt">Créditos de recursos</a></p>
   </div>
 </footer>
-
-<script src="js/main.js"></script>
 </body>
 </html>
